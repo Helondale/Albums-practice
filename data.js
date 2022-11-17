@@ -5,6 +5,7 @@ let bestSellingAlbums = [
         year: 1982,
         genres: ["pop", "post-disco", "funk", "rock"],
         sale: 70000000,
+        iLikeIt: true,
     },
     {
         artist: "AC/DC",
@@ -12,6 +13,7 @@ let bestSellingAlbums = [
         year: 1980,
         genres: ["hard rock"],
         sale: 50000000,
+        iLikeIt: true,
     },
     {
         artist: "Whitney Houston",
@@ -19,6 +21,7 @@ let bestSellingAlbums = [
         year: 1992,
         genres: ["r&b", "soul", "pop", "soundtrack"],
         sale: 45000000,
+        iLikeIt: true,
     },
     {
         artist: "Pink Floyd",
@@ -26,6 +29,7 @@ let bestSellingAlbums = [
         year: 1973,
         genres: ["progressive rock"],
         sale: 45000000,
+        iLikeIt: true,
     },
     {
         artist: "Eagles",
@@ -33,6 +37,7 @@ let bestSellingAlbums = [
         year: 1976,
         genres: ["country rock", "soft rock", "folk rock"],
         sale: 44000000,
+        iLikeIt: true,
     },
     {
         artist: "Eagles",
@@ -40,6 +45,7 @@ let bestSellingAlbums = [
         year: 1976,
         genres: ["soft rock"],
         sale: 42000000,
+        iLikeIt: true,
     },
     {
         artist: "Shania Twain",
@@ -47,6 +53,7 @@ let bestSellingAlbums = [
         year: 1997,
         genres: ["country", "pop"],
         sale: 40000000,
+        iLikeIt: false,
     },
     {
         artist: "Fleetwood Mac",
@@ -54,14 +61,28 @@ let bestSellingAlbums = [
         year: 1977,
         genres: ["soft rock"],
         sale: 40000000,
+        iLikeIt: true,
     },
+    {
+        artist: "Guns N' Roses",
+        title: "Appetite for Destruction",
+        year: 1987,
+        genres: ["hard rock"],
+        sale: 38000000,
+        iLikeIt: true,
+
+    }
 ];
 
 // DO NOT MODIFY THE CODE ABOVE THIS LINE
 // WRITE YOUR CODE BELOW THIS LINE
-
-
-
+let averageSale = (bestSellingAlbums[0].sale + bestSellingAlbums[1].sale + bestSellingAlbums[2].sale + bestSellingAlbums[3].sale + bestSellingAlbums[4].sale + bestSellingAlbums[5].sale + bestSellingAlbums[6].sale + bestSellingAlbums[7].sale) /8;
+let averageAge = (2022 - bestSellingAlbums[0].year + 2022 - bestSellingAlbums[1].year + 2022 - bestSellingAlbums[2].year + 2022 - bestSellingAlbums[3].year + 2022 - bestSellingAlbums[4].year + 2022 - bestSellingAlbums[5].year + 2022 - bestSellingAlbums[6].year + 2022 - bestSellingAlbums[7].year) /8;
+let newestAlbum = (bestSellingAlbums[6].title);
+let oldestAlbum = (bestSellingAlbums[3].title);
+let albumsOfEagles = (bestSellingAlbums[4].title + bestSellingAlbums[5].title);
+if(bestSellingAlbums[4].genres + bestSellingAlbums[5].genres === "soft rock");
+let isBothSoftRock = true;
 // DO NOT MODIFY THE CODE BELOW THIS LINE
 let toExport;
 
