@@ -81,8 +81,7 @@ let averageAge = (2022 - bestSellingAlbums[0].year + 2022 - bestSellingAlbums[1]
 let newestAlbum = (bestSellingAlbums[6].title);
 let oldestAlbum = (bestSellingAlbums[3].title);
 let albumsOfEagles = (bestSellingAlbums[4].title + bestSellingAlbums[5].title);
-if(bestSellingAlbums[4].genres + bestSellingAlbums[5].genres === "soft rock");
-let isBothSoftRock = true;
+let isBothSoftRock = (bestSellingAlbums[4].genres[1] === bestSellingAlbums[5].genres[0]);
 // DO NOT MODIFY THE CODE BELOW THIS LINE
 let toExport;
 
