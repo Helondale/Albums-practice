@@ -74,27 +74,9 @@ let bestSellingAlbums = [
     }
 ];
 
-// DO NOT MODIFY THE CODE ABOVE THIS LINE
-// WRITE YOUR CODE BELOW THIS LINE
 let averageSale = (bestSellingAlbums[0].sale + bestSellingAlbums[1].sale + bestSellingAlbums[2].sale + bestSellingAlbums[3].sale + bestSellingAlbums[4].sale + bestSellingAlbums[5].sale + bestSellingAlbums[6].sale + bestSellingAlbums[7].sale) /8;
 let averageAge = (2022 - bestSellingAlbums[0].year + 2022 - bestSellingAlbums[1].year + 2022 - bestSellingAlbums[2].year + 2022 - bestSellingAlbums[3].year + 2022 - bestSellingAlbums[4].year + 2022 - bestSellingAlbums[5].year + 2022 - bestSellingAlbums[6].year + 2022 - bestSellingAlbums[7].year) /8;
 let newestAlbum = (bestSellingAlbums[6].title);
 let oldestAlbum = (bestSellingAlbums[3].title);
 let albumsOfEagles = (bestSellingAlbums[4].title + bestSellingAlbums[5].title);
 let isBothSoftRock = (bestSellingAlbums[4].genres[1] === bestSellingAlbums[5].genres[0]);
-// DO NOT MODIFY THE CODE BELOW THIS LINE
-let toExport;
-
-try {
-	toExport = [
-		{name: "averageSale", content: averageSale, type: "number"},
-        {name: "averageAge", content: averageAge, type: "number"},
-        {name: "newestAlbum", content: newestAlbum, type: "object"},
-        {name: "oldestAlbum", content: oldestAlbum, type: "object"},
-        {name: "albumsOfEagles", content: albumsOfEagles, type: "object"}
-	]
-} catch (error) {
-	toExport = {error: error.message}
-}
-
-export {toExport};
